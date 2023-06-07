@@ -1,0 +1,395 @@
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+@media only screen and (min-width: 35em) {
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+
+section {
+  padding: 20px;
+  margin: 0px 0;
+  background-color: #131313;
+}
+
+nav {
+  background-color: transparent;
+  color: #131313;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'lato', sans-serif;
+  color: #131313;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #131313;
+  text-decoration: none;
+}
+
+header h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#home {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background-color: #101010;
+}
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-text h1 {
+  flex: 1;
+  padding-right: 20px;
+  padding-top: 100px;
+  color: #ffffffeb;
+  margin: 0;
+  line-height: 1;
+  font-size: 3.2em;
+}
+
+.intro-text h2 {
+  flex: 1;
+  padding:  -10 -10 20px;
+  color: #ffffffeb;
+  font-size: 3.2em;
+  margin: 0;
+  line-height: 1;
+}
+
+.intro-text p {
+  color: #ffffffeb;
+  margin-top: 35px;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: right;
+}
+
+.intro-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-scroll {
+  background-color: #dd1515;
+  color: #fff;
+  border: 1px solid #dd1515;
+  box-shadow: -4px -7px 0px -4px inset #a70000;
+  margin: 15px;
+}
+
+.btn-download {
+  background-color: transparent;
+  color: #dd1515;
+  border: 1px solid #dd1515;
+  margin: 15px;
+  margin-left: 10px;
+}
+.btn-download:hover {	
+  color: #FF1A1A;	
+  border-color: #FF1A1A;	
+  box-shadow:0 0 7px #FF1A1A;	
+}	
+.btn-scroll:hover {	
+    background-color: #FF1A1A;	
+      
+}	
+.intro-container {	
+    display: flex;	
+    justify-content: space-between;	
+    align-items: center;	
+}	
+.intro-text, .intro-image {	
+    flex: 0 0 50%;	
+    padding-right: 20px;	
+    color: #ffffffeb;	
+}	
+.intro-image {	
+    text-align: right;	
+}	
+.intro-image img {	
+    max-width: 100%;	
+    height: auto;	
+}
+.about-section {
+  padding: 50px;
+  background-color: #161616;
+}
+
+.about-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.about-section .profile-picture {
+  flex: 0 0 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.about-section .bio {
+  flex: 1;
+  margin-left: 20px;
+  color: white;
+}
+
+.about-section .bio h2 {
+  color: white;
+  margin-top: 0;
+}
+
+.about-section .bio p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  backdrop-filter: blur(10px); /* Agrega un efecto de difuminado al fondo */
+}
+
+.skills-list .skill-item {
+  width: 200px; /* Ajusta según lo necesario */
+  margin-right: 10px; /* Ajusta según lo necesario */
+  text-align: center; /* Para centrar el contenido */
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 14px 2px black, 0 6px 6px rgba(0, 0, 0, 0.23); /* Agrega sombras a las cajas */
+  background: rgba(19, 19, 19, 0.5); /* Define un fondo para las cajas con transparencia */
+  color: #dfdfdf; /* Cambia el color del texto a blanco para que sea visible sobre el fondo oscuro */
+}
+
+.skills-list .skill-item img {
+  width: 100%; /* Ajusta según lo necesario */
+  height: auto;
+}
+
+.skills-list .skill-item p {
+  margin-top: 10px; /* Ajusta según lo necesario */
+}
+
+
+
+#projects {
+  width: 100%;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.project-item {
+  flex: 1 0 calc(33.33% - 20px); /* Crea 3 columnas */
+  border: 1px solid #000; /* Ajusta según lo necesario */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.project-item img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto;
+}
+
+.project-item p {
+  margin-top: 10px; /* Espacio arriba del párrafo */
+}
+
+footer {
+  background-color: #131313;
+  color: #ffffffeb;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
