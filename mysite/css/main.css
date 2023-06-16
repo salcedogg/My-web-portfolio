@@ -168,8 +168,8 @@ section {
 }
 
 nav {
-  background-color: transparent;
-  color: #131313;
+  background-color: #101010;
+  color: whitesmoke;
   padding: 10px 0;
 }
 
@@ -187,7 +187,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #131313;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -341,7 +341,7 @@ header h1 {
   text-align: center; /* Para centrar el contenido */
   padding: 10px;
   box-sizing: border-box;
-  box-shadow: 8px 8px 14px 2px black, 0 6px 6px rgba(0, 0, 0, 0.23); /* Agrega sombras a las cajas */
+  box-shadow: 2px 3px 9px 0px #090909, 0 6px 6px rgba(0, 0, 0, 0.23);
   background: rgba(19, 19, 19, 0.5); /* Define un fondo para las cajas con transparencia */
   color: #dfdfdf; /* Cambia el color del texto a blanco para que sea visible sobre el fondo oscuro */
 }
@@ -389,7 +389,6 @@ footer {
   color: #ffffffeb;
   text-align: center;
   padding: 10px;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
