@@ -199,7 +199,8 @@ header h1 {
 #home {
   min-height: 100vh;
   padding: 50px 20px;
-  background-color: #101010;
+  background-image: url(./redbackground.png);
+  background-size: cover;
 }
 .intro-container {
   display: flex;
