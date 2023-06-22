@@ -82,6 +82,7 @@ textarea {
   clear: both;
 }
 
+
 @media only screen and (min-width: 35em) {
 }
 
@@ -199,14 +200,22 @@ header h1 {
 #home {
   min-height: 100vh;
   padding: 50px 20px;
-  background-image: url(./redbackground.png);
+  background-image: url(./backgroundkeify.png);
   background-size: cover;
 }
 .intro-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  .intro-container {
+    flex-direction: column;
+  }
+}
+
 
 .intro-text h1 {
   flex: 1;
@@ -277,11 +286,6 @@ header h1 {
     background-color: #FF1A1A;	
       
 }	
-.intro-container {	
-    display: flex;	
-    justify-content: space-between;	
-    align-items: center;	
-}	
 .intro-text, .intro-image {	
     flex: 0 0 50%;	
     padding-right: 20px;	
@@ -296,6 +300,7 @@ header h1 {
 }
 .about-section {
   padding: 50px;
+  background-image: url();
   background-color: #161616;
 }
 
@@ -363,11 +368,23 @@ header h1 {
 }
 
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px; /* Espacio entre los elementos */
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
 
 .project-item {
   flex: 1 0 calc(33.33% - 20px); /* Crea 3 columnas */
